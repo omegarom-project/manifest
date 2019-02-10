@@ -18,6 +18,10 @@
            sync-c="true"
            sync-j="4" />
 
+  <remote name="omega"
+           fetch="https://github.com/omegarom-project/"
+           revision="9.0" />
+
   <!-- AOSP Projects -->
 
   <project path="build/make" name="LineageOS/android_build" groups="pdk" >
