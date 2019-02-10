@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+  <project path="vendor/omega" name="vendor_omega" remote="omega" />
+  <project path="lineage-sdk" name="lineage-sdk" remote="omega" />
+  <project path="packages/apps/ColliderSettings" name="packages_apps_ColliderSettings" groups="pdk-fs" remote="omega" />
+  <project path="build/soong" name="build_soong" groups="pdk,tradefed" remote="omega" >
+    <linkfile src="root.bp" dest="Android.bp" />
+    <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
+  </project>
+  <project path="build/make" name="build" groups="pdk" remote="omega" >
+    <copyfile src="core/root.mk" dest="Makefile" />
+    <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
+    <linkfile src="buildspec.mk.default" dest="build/buildspec.mk.default" />
+    <linkfile src="core" dest="build/core" />
+    <linkfile src="envsetup.sh" dest="build/envsetup.sh" />
+    <linkfile src="target" dest="build/target" />
+    <linkfile src="tools" dest="build/tools" />
+  </project>
+<!--  <project path="build/kati" name="build_kati" groups="pdk,tradefed" remote="omega" /> -->
+  <project path="frameworks/base" name="frameworks_base" groups="pdk-cw-fs,pdk-fs" remote="omega" />
+  <project path="packages/apps/Settings" name="packages_apps_Settings" groups="pdk-fs" remote="omega" />
+  <project path="system/sepolicy" name="system_sepolicy" groups="pdk" remote="omega" />
+  <project path="android" name="manifest" remote="omega" />
+
+</manifest>
