@@ -23,6 +23,6 @@
   <project path="system/sepolicy" name="system_sepolicy" groups="pdk" remote="omega" />
   <project path="android" name="manifest" remote="omega" />
   <project path="device/lineage/sepolicy" name="device_lineage_sepolicy" remote="omega" />
-  <project path="packages/apps/WeatherClient" name="crdroidandroid/android_packages_apps_WeatherClient" remote="github" \>
+  <project path="packages/apps/WeatherClient" name="crdroidandroid/android_packages_apps_WeatherClient" remote="github" />
 
 </manifest>
